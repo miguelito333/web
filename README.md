@@ -9,7 +9,6 @@ Tecnologías Utilizadas
 
  Cómo Ejecutar Localmente  
 1. Clona el repositorio:  
-   ```bash
 Entra en la carpeta del proyecto:
 cd portfolio
 Abre el archivo index.html en tu navegador o usa un servidor local:
