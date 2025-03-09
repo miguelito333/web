@@ -1,0 +1,225 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    color: #333;
+}
+
+nav {
+    padding: 20px;
+    text-align: center;
+    background-color: #fff;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #3b3b98;
+}
+
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    padding: 50px;
+    background: #3b3b98;
+    color: #fff;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 3em;
+    margin: 0;
+}
+
+.hero p {
+    font-size: 1.2em;
+    margin-top: 10px;
+}
+
+.image-section img {
+    width: 250px; /* Ajusta el tamaño de la imagen */
+    height: auto;
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Sombra para dar profundidad */
+}
+
+.content {
+    padding: 80px 20px;
+    max-width: 800px;
+    margin: auto;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+    z-index: 1;
+    min-height: 100vh; /* Asegura que cada sección ocupe al menos toda la altura de la ventana */
+}
+
+.about {
+    background-color: #b8e994; /* Fondo verde claro */
+}
+
+.projects {
+    background-color: #f0f0f0; /* Fondo gris claro */
+}
+
+.hobbies {
+    background-color: #ffcccb; /* Fondo rojo claro */
+}
+
+.contact {
+    background-color: #d1e7dd; /* Fondo verde claro */
+}
+
+h2 {
+    font-size: 2em;
+    margin-top: 0;
+    color: #3b3b98; /* Color para los encabezados */
+}
+
+.project {
+    margin-bottom: 40px;
+}
+
+.project h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.project p {
+    margin: 10px 0;
+}
+
+.project ul {
+    margin: 10px 0;
+    padding-left: 20px;
+}
+
+.image-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px; /* Espacio entre las imágenes */
+}
+
+.image-gallery img {
+    width: calc(50% - 10px); /* Dos imágenes por fila */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra para las imágenes */
+}
+
+.hobby-image {
+    text-align: center;
+}
+
+.hobby-img {
+    width: 300px; /* Ajusta el tamaño de la imagen de hobbies */
+    height: auto;
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra para la imagen */
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #3b3b98;
+    color: #fff;
+}
+
+.contact-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.contact-links a {
+    color: #fff;
+    font-size: 24px; /* Tamaño de los íconos */
+    transition: color 0.3s;
+}
+
+.contact-links a:hover {
+    color: #b8e994;
+}
+
+/* Elementos decorativos en la sección About Me */
+.decorative-elements {
+    position: absolute;
+    top: 20%;
+    left: 10%;
+    z-index: -1;
+}
+
+.circle {
+    width: 100px;
+    height: 100px;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    position: absolute;
+    top: -50px;
+    left: -50px;
+}
+
+.square {
+    width: 150px;
+    height: 150px;
+    background-color: rgba(255, 255, 255, 0.2);
+    position: absolute;
+    bottom: -50px;
+    right: -50px;
+}/* Estilos para pantallas pequeñas (menos de 768px) */
+@media screen and (max-width: 768px) {
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+    }
+
+    nav ul li {
+        margin-bottom: 10px;
+    }
+
+    .hero {
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+
+    .image-section img {
+        width: 80%;
+    }
+
+    .content {
+        padding: 15px;
+    }
+
+    .hobby-image img {
+        width: 100%;
+        height: auto;
+    }
+
+    .image-gallery img {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}
